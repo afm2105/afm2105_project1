@@ -1,7 +1,29 @@
 var userScore = 0;
 
-var openingPrompt = alert("Hey there! Let's play a trivia game. All the questions will be prompted and they are also on the page for your convenience. Please click ok so that we can get started.");
+var openingAlert = alert("Hey there! Let's play a trivia game. All the questions will be prompted and they are also on the page for your convenience. Please click ok so that we can get started.");
 
+var sportsQuestions = ["What is the name of the NBA team in New York that wears blue and orange? Please type Nets, Knicks, or Bulls.", "What is the name of the Los Angeles-based NHL team? Please type Kings, Devils, or Seahawks." ];
+alert(sportsQuestions);
+
+function listSportsQuestions(sportsQuestions){
+  for (var i = 0; i<questions.length;i++){
+    console.log(sportsQuestions[i]);
+  }
+  if (sportsQuestions[0]==="Knicks" || "knicks") {
+    alert("Great job! That's right!");
+    userScore = userScore + 1;
+  }
+  else {
+    alert("Sorry. That wasn't the right answer");
+  }
+  if (sportsQuestions[1] === "Kings" || "kings") {
+    alert("Great job! That's right!");
+    userScore = userScore + 1;
+}
+else {
+  alert("Sorry. That wasn't the right answer");
+}
+}
 var questionOne = prompt("What is the name of the NBA team in New York that wears blue aNd orange? Please type Nets, Knicks, or Bulls.");
 
 if (questionOne === "Knicks" || "knicks") {
@@ -14,15 +36,7 @@ else {
 
 console.log("Your current score is " + userScore);
 
-var questionTwo = prompt("What is the name of the Los Angeles-based NHL team? Please type Kings, Devils, or Seahawks.");
-
-if (questionTwo === "Kings" || "kings") {
-  alert("Great job! That's right!");
-  userScore = userScore + 1;
-}
-else {
-  alert("Sorry. That wasn't the right answer");
-}
+var questionTwo = prompt("What is the name of the Los Angeles-based NHL team? Please type Kings, Devils, or Seahawks.");if (questionTwo === "Kings" || "kings") {alert("Great job! That's right!");userScore = userScore + 1;}else {alert("Sorry. That wasn't the right answer");}
 
 console.log("Your current score is " + userScore);
 
