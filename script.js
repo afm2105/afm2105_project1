@@ -1,23 +1,133 @@
 var userScore = 0;
 
-var openingAlert = alert("Hey there! Let's play a trivia game. All the questions will be prompted and they are also on the page for your convenience. Please click ok so that we can get started.");
+var openingAlert = alert("Hey there! Let's play a trivia game. All the questions will be dispalyed in the console and they are also on the page for your convenience. Please answer each question only once. Please click ok so that we can get started.");
 
 var sportsQuestions = ["What is the name of the NBA team in New York that wears blue and orange? Please chooe Nets, Knicks, or Bulls.", "What is the name of the Los Angeles-based NHL team? Please choose Kings, Devils, or Seahawks." ];
-alert(sportsQuestions[0]);
-alert(sportsQuestions[1]);
+console.log(sportsQuestions[0]);
+console.log(sportsQuestions[1]);
 
-// function checkUserAnswer() {
-//   var el = docuemnt.getElemenetById("radio1");
-//   el.addEventlistener("click", checkUserAnswer);
-// }
+var historyQuestions = ["Julius Caaser was an emperor of what empire?","What Canadian province in the 1970s made French its official language?",];
+console.log(historyQuestions[0]);
+console.log(historyQuestions[1]);
 
-function listSportsQuestions(sportsQuestions) {
-// document.querySelector(#Nets)  // listSportsQuestions.addEventListener("click", function() {
-    for(var i = 0; i<sportsQuestions.length;i++) {
-      console.log(sportsQuestions[i]);
-    }
-  }
+// function listSportsQuestions(sportsQuestions) {
+//   for(i = 0; i<sportsQuestions.length;i++) {
+//       console.log(sportsQuestions[i]);
+//     }
+//   }
 
+var button= document.querySelector("#Knicks");
+var handleClickEvent = function(){
+  console.log("That's right!");
+  alert("That's right!");
+  userScore = (userScore+1);
+  console.log("Your total score is currently " +" "+ userScore + ".");
+};
+
+button.addEventListener("click", handleClickEvent);
+
+var button= document.querySelector("#Nets");
+var handleClickEvent = function(){
+  console.log("Sorry. That's wrong.");
+  alert("Sorry. That's wrong.");
+  console.log("Your total score is currently " +" "+ userScore + ".");
+};
+
+button.addEventListener("click", handleClickEvent);
+
+var button= document.querySelector("#Bulls");
+var handleClickEvent = function(){
+  console.log("Sorry. That's wrong.");
+  alert("Sorry. That's wrong.");
+  console.log("Your total score is currently " +" "+ userScore + ".");
+};
+
+button.addEventListener("click", handleClickEvent);
+
+var button= document.querySelector("#Kings");
+var handleClickEvent = function(){
+  console.log("That's right!");
+  alert("That's right!");
+  userScore = (userScore+1);
+  console.log("Your total score is currently " +" "+ userScore + ".");
+};
+
+button.addEventListener("click", handleClickEvent);
+
+
+var button= document.querySelector("#Devils");
+var handleClickEvent = function(){
+  console.log("Sorry. That's wrong.");
+  alert("Sorry. That's wrong.");
+  console.log("Your total score is currently " +" "+ userScore + ".");
+};
+
+button.addEventListener("click", handleClickEvent);
+
+var button= document.querySelector("#Seahawks");
+var handleClickEvent = function(){
+  console.log("Sorry. That's wrong.");
+  alert("Sorry. That's wrong.");
+  console.log("Your total score is currently " +" "+ userScore + ".");
+};
+
+button.addEventListener("click", handleClickEvent);
+
+var button= document.querySelector("#Roman");
+var handleClickEvent = function(){
+  console.log("That's right!");
+  alert("That's right!");
+  userScore = (userScore+1);
+  console.log("Your total score is currently " +" "+ userScore + ".");
+};
+
+button.addEventListener("click", handleClickEvent);
+
+var button= document.querySelector("#Spartan");
+var handleClickEvent = function(){
+  console.log("Sorry. That's wrong.");
+  alert("Sorry. That's wrong.");
+  console.log("Your total score is currently " +" "+ userScore + ".");
+};
+
+button.addEventListener("click", handleClickEvent);
+
+var button= document.querySelector("#Byzantine");
+var handleClickEvent = function(){
+  console.log("Sorry. That's wrong.");
+  alert("Sorry. That's wrong.");
+  console.log("Your total score is currently " +" "+ userScore + ".");
+};
+
+button.addEventListener("click", handleClickEvent);
+
+var button= document.querySelector("#Quebec");
+var handleClickEvent = function(){
+  console.log("That's right!");
+  alert("That's right!");
+  userScore = (userScore+1);
+  console.log("Your total score is currently " +" "+ userScore + ".");
+};
+
+button.addEventListener("click", handleClickEvent);
+
+var button= document.querySelector("#British Columbia");
+var handleClickEvent = function(){
+   console.log("Sorry. That's wrong.");
+   alert("Sorry. That's wrong.");
+   console.log("Your total score is currently " +" "+ userScore + ".");
+};
+
+button.addEventListener("click", handleClickEvent);
+
+var button= document.querySelector("#Alberta");
+var handleClickEvent = function(){
+  console.log("Sorry. That's wrong.");
+  console.log("Sorry. That's wrong.");
+  console.log("Your total score is currently " +" "+ userScore + ".");
+};
+
+button.addEventListener("click", handleClickEvent);
 
 //     if (sportsQuestions[0]==="Knicks" || "knicks") {
 //       alert("Great job! That's right!");
@@ -34,15 +144,15 @@ function listSportsQuestions(sportsQuestions) {
 // //   alert("Sorry. That wasn't the right answer");
 // }
 // }
-var historyQuestions = ["Julius Caeaser was an emperor of what empire? Please choose Roman, Spartan, or Byzantine.", "What Canadian province in the 1970s made French its official language? Please choose Quebec, British Columbia, or Alberta." ];
-alert(historyQuestions[0]);
-alert(historyQuestions[1]);
+// var historyQuestions = ["Julius Caeaser was an emperor of what empire? Please choose Roman, Spartan, or Byzantine.", "What Canadian province in the 1970s made French its official language? Please choose Quebec, British Columbia, or Alberta." ];
+// alert(historyQuestions[0]);
+// alert(historyQuestions[1]);
 
-function listHistoryQuestions(historyQuestions){
-  for (var i = 0; i<historyQuestions.length;i++){
-    console.log(historyQuestions[i]);
-  }
-}
+// function listHistoryQuestions(historyQuestions){
+//   for (var i = 0; i<historyQuestions.length;i++){
+//     console.log(historyQuestions[i]);
+//   }
+// }
 
 // var questionOne = prompt("What is the name of the NBA team in New York that wears blue aNd orange? Please type Nets, Knicks, or Bulls.");
 
@@ -108,3 +218,9 @@ function listHistoryQuestions(historyQuestions){
 // // else {
 // //   console.log("Maybe you'll do better next time.");
 // // }
+// function checkUserAnswer() {
+//   var el = docuemnt.getElemenetById("radio1");
+//   el.addEventlistener("click", checkUserAnswer);
+// }
+
+// document.querySelector(#Nets)  // listSportsQuestions.addEventListener("click", function() {
