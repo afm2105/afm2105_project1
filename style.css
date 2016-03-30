@@ -10,11 +10,18 @@ header{
   border-width: thin
 }
 h1{
-  font-size: 55px;
+  font-size: 44px;
 }
 h2{
-  font-size: 44px;
+  font-size: 33px;
 }
 p{
   font-size: 25px;
+}
+footer{
+  font-size: 15px;
+  border-top: 22px;
+  border-top: solid;
+  border-width: thin;
+  padding: 10px;
 }
