@@ -6,7 +6,7 @@ var sportsQuestions = ["What is the name of the NBA team in New York that wears 
 console.log(sportsQuestions[0]);
 console.log(sportsQuestions[1]);
 
-var historyQuestions = ["Julius Caaser was an emperor of what empire?","What Canadian province in the 1970s made French its official language?",];
+var historyQuestions = ["Julius Caesar was an emperor of what empire?","What Canadian province in the 1970s made French its official language?",];
 console.log(historyQuestions[0]);
 console.log(historyQuestions[1]);
 
@@ -111,7 +111,7 @@ var handleClickEvent = function(){
 
 button.addEventListener("click", handleClickEvent);
 
-var button= document.querySelector("#British Columbia");
+var button= document.querySelector("#British_Columbia");
 var handleClickEvent = function(){
    console.log("Sorry. That's wrong.");
    alert("Sorry. That's wrong.");
@@ -123,12 +123,58 @@ button.addEventListener("click", handleClickEvent);
 var button= document.querySelector("#Alberta");
 var handleClickEvent = function(){
   console.log("Sorry. That's wrong.");
-  console.log("Sorry. That's wrong.");
+  alert("Sorry. That's wrong.");
   console.log("Your total score is currently " +" "+ userScore + ".");
 };
 
 button.addEventListener("click", handleClickEvent);
 
+var finalButton = document.getElementsByTagName("button");
+var handleClickEvent = function(){
+  alert("Thanks for playing!");
+};
+
+finalButton[0].addEventListener("click", handleClickEvent);
+
+var domManipulation = document.getElementsByTagName("button");
+// var showTextContent=domManipulation.textContent;
+domManipulation.textContent="Thanks for playing.";
+// document.getElementsByTagName("button").innerHTML = "Thanks for playing!";
+
+// document.getElementsByTagName("button").style.backgroundColor = green;
+// function setColor(btn, color){
+//     var count=1;
+//     var property = document.getElementsByTagName("button");
+//     if (count === 0){
+//         property.style.backgroundColor = "white";
+//         count=1;
+//     }
+//     else{
+//         property.style.backgroundColor = "green";
+//         count=0;
+//     }
+//
+// }
+// document.getElementsByTagName("button").bgcolor="#green";
+
+// var count=1;
+// function setColor(finalButton, color){
+//     var property = document.getElementsByTagName("button");
+//     if (count === 0){
+//         property.style.backgroundColor = red;
+//         count=1;
+//     }
+//     else{
+//         property.style.backgroundColor = white;
+//         count=0;
+//       }
+//     }
+// if (userScore>=3) {
+//   alert("great job!");
+// }
+// else {
+//   alert ("You got 2 or fewer questions right. Maybe you'll do better next time.");
+// }
 //     if (sportsQuestions[0]==="Knicks" || "knicks") {
 //       alert("Great job! That's right!");
 //       userScore = userScore + 1;
