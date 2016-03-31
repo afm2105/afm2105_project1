@@ -136,6 +136,13 @@ var handleClickEvent = function(){
 
 finalButton[0].addEventListener("click", handleClickEvent);
 
+// var newButtonColor = document.getElementsByTagName("button");
+// var handleClickEvent =  function(){
+//   newButtonColor.style.background = "blue";
+// };
+//
+// newButtonColor[0].addEventListener("click", handleClickEvent);
+
 var domManipulation = document.getElementsByTagName("button");
 // var showTextContent=domManipulation.textContent;
 domManipulation.textContent="Thanks for playing.";
