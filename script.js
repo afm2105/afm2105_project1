@@ -1,6 +1,6 @@
 var userScore = 0;
 
-var openingAlert = alert("Hey there! Let's play a trivia game. All the questions will be dispalyed in the console and they are also on the page for your convenience. Please answer each question only once. Please click ok so that we can get started.");
+var openingAlert = alert("Hey there! Let's play a trivia game. All the questions will be dispalyed in the console and they are also on the page for your convenience. Please answer each question only once. Please click 'ok' so that we can get started.");
 
 var sportsQuestions = ["What is the name of the NBA team in New York that wears blue and orange? Please chooe Nets, Knicks, or Bulls.", "What is the name of the Los Angeles-based NHL team? Please choose Kings, Devils, or Seahawks." ];
 console.log(sportsQuestions[0]);
@@ -129,13 +129,25 @@ var handleClickEvent = function(){
 
 button.addEventListener("click", handleClickEvent);
 
-var finalButton = document.getElementsByTagName("button");
-var handleClickEvent = function(){
-  alert("Thanks for playing!");
-};
+//
+// var finalButton = document.getElementsByTagName("button");
+// var handleClickEvent = function(){
+//   alert("Thanks for playing!");
+// };
+//
+// finalButton[0].addEventListener("click", handleClickEvent);
+//
 
-finalButton[0].addEventListener("click", handleClickEvent);
+// var buttons = document.getElementsByTagName("button");
+var finalButton = document.getElementById("final_button");
 
+finalButton.addEventListener("click", updateButton);
+
+function updateButton() {
+  console.log("Thanks for playing!");
+  finalButton.textContent="Thanks for playing!";
+  finalButton.style.background='#87AFC7';
+}
 // var newButtonColor = document.getElementsByTagName("button");
 // var handleClickEvent =  function(){
 //   newButtonColor.style.background = "blue";
@@ -143,9 +155,8 @@ finalButton[0].addEventListener("click", handleClickEvent);
 //
 // newButtonColor[0].addEventListener("click", handleClickEvent);
 
-var domManipulation = document.getElementsByTagName("button");
-// var showTextContent=domManipulation.textContent;
-domManipulation.textContent="Thanks for playing.";
+// // var showTextContent=domManipulation.textContent;
+// domManipulation[0].textContent="Thanks for playing.";
 // document.getElementsByTagName("button").innerHTML = "Thanks for playing!";
 
 // document.getElementsByTagName("button").style.backgroundColor = green;
