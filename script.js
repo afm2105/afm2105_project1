@@ -1,4 +1,6 @@
 var userScore = 0;
+var userScorebutton=document.getElementById("user_score");
+var knicksChosen = document.getElementById("Knicks");
 
 var openingAlert = alert("Hey there! Let's play a trivia game. All the questions will be dispalyed in the console and they are also on the page for your convenience. Please answer each question only once. Please click 'ok' so that we can get started.");
 
@@ -139,6 +141,14 @@ button.addEventListener("click", handleClickEvent);
 //
 
 // var buttons = document.getElementsByTagName("button");
+
+knicksChosen.addEventListener("click", updateScore);
+
+function updateScore() {
+  userScore = (userScore + 1);
+  userScoreButton.textContent="Your score is" + " " + userScore;
+}
+
 var finalButton = document.getElementById("final_button");
 
 finalButton.addEventListener("click", updateButton);
